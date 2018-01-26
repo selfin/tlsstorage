@@ -94,6 +94,7 @@ func (S *TLSStorage) getter(fqdn string) (*tls.Certificate, error) {
 			for _, pattern := range S.whitelist {
 				if m := pattern.FindString(fqdn); m != "" {
 					approved = true
+					break
 				}
 			}
 			if approved {

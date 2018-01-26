@@ -1,4 +1,3 @@
-
 package tlsstorage
 
 import (
@@ -10,7 +9,7 @@ import (
 	"net/http"
 )
 
-func ExampleNewTlsStorage() {
+func ExampleNewTLSStorage() {
 	fileB, err := tlsbackends.NewFileBackend("/tmp/")
 	if err != nil {
 		panic(err)
